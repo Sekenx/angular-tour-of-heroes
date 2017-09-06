@@ -30,8 +30,8 @@ const HEROES: Hero[] = [
         <span class="badge">{{hero.id}}</span> {{hero.name}}
      </li>
    <ul>
+   <hero-detail [hero]="selectedHero"></hero-detail>
   `,
-  // Buttons for the heroes
   styles: [`
     .selected {
       background-color: #CFD8DC !important:
@@ -73,6 +73,7 @@ const HEROES: Hero[] = [
       padding: 0.8em 0.7em 0 0.7em;
       background-color: #607D8B;
       line-height: 1em;
+      position: relative;
       left: -1px;
       top: -4px;
       height: 1.8em;
