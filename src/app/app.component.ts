@@ -10,7 +10,6 @@ import { OnInit } from '@angular/core';
    <h2>My Heroes</h2>
    <!-- Display the array of heroes through data binding of HEROES -->
    <ul class="heroes">
-     <li>
         <li *ngFor="let hero of heroes"
           [class.selected]="hero === selectedHero"
           (click)="onSelect(hero)">
@@ -81,9 +80,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes();
   }
+  
+  // Act on promise
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
+
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }

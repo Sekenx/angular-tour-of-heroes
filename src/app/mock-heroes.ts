@@ -1,6 +1,6 @@
 import { Hero } from './hero';
 
-// An array of heroes
+// An array of heroes, populates list
 export const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },

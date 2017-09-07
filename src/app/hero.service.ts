@@ -6,8 +6,8 @@ import { HEROES } from './mock-heroes';
 @Injectable()
 export class HeroService {
   // Allow heroes to be retrieved from anywhere i.e. Cloud, local storage
-  getHeroes(): Hero[] {
-    return HEROES;
+  // Promise to call back when results are processed
+  getHeroes(): Promise<Hero[]> {
+    return Promise.resolve(HEROES);
   }
-
 }

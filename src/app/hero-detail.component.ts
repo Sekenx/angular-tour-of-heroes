@@ -5,13 +5,15 @@ import { Hero } from './hero';
   selector: 'hero-detail',
   template: `
     <!-- Wrapped so no undefined errors -->
-    <div *ngIf="selectedHero">
-      <h2>{{selectedHero.name}} details!</h2>
-      <div><label>id: </label>{{hero.id}}</div>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="selectedHero.name" placeholder="name">
-      </div>
+    <div *ngIf="hero">
+      <h2>{{hero.name}} details!</h2>
+        <div>
+          <label>id: </label>{{hero.id}}
+        </div>
+        <div>
+          <label>name: </label>
+          <input [(ngModel)]="hero.name" placeholder="name">
+        </div>
     </div>
  `
 })
