@@ -6,7 +6,7 @@ import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-   <h1>{{title}}</h1>
+   {{title}}
    <h2>My Heroes</h2>
    <!-- Display the array of heroes through data binding of HEROES -->
    <ul class="heroes">
@@ -17,7 +17,6 @@ import { OnInit } from '@angular/core';
         <span class="badge">{{hero.id}}</span> {{hero.name}}
      </li>
    <ul>
-   <hero-detail [hero]="selectedHero"></hero-detail>
   `,
   styles: [`
     .selected {
