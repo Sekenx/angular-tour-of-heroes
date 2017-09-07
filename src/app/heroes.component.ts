@@ -6,7 +6,7 @@ import { HeroService } from './hero.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: ',/heroes.component.html',
+  templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
 
