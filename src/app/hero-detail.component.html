@@ -1,5 +1,5 @@
 <!-- Wrapped so no undefined errors -->
-<a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+<div *ngIf="hero">
   <h2>{{hero.name}} details!</h2>
     <div>
       <label>id: </label>{{hero.id}}

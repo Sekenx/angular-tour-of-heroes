@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
     <nav>
       <a routerLink= "/dashboard">Dashboard</a>
       <a routerLink= "/heroes">Heroes</a>
-    <nav>
+    </nav>
     <router-outlet></router-outlet>
-  `
+  `,
+  styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent {
   title = 'Tour of Heroes';
 }
